@@ -19,11 +19,16 @@ header {
   display: none;
 }
 
+.a-href {
+  text-decoration: none;
+  color: beige;
+}
+
 .open-comments,
 .welcome {
   font-family: 'lato', sans-serif;
   color: orangered;
-  margin-left: 40px;
+  margin-left: 10px;
   padding: 5px;
   line-height: 2rem;
   text-align: center;
@@ -260,6 +265,30 @@ header {
   list-style-type: none;
   text-decoration: none;
   display: none;
+  background-color: orangered;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  top: 0;
+}
+
+.li {
+  position: fixed;
+  left: 25px;
+  top: 0;
+  padding-top: 50px;
+  gap: 25px;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.ex {
+  position: absolute;
+  right: 90px;
+  top: 0;
+  color: beige;
 }
 
 .pgraph {
@@ -274,6 +303,7 @@ header {
   .hide {
     display: none;
   }
+
 
   .first-bar {
     background-color: #282b32;
@@ -301,6 +331,7 @@ header {
     display: flex;
     gap: 2rem;
     align-items: center;
+    display: block;
   }
 
   .a-href {
@@ -363,8 +394,6 @@ header {
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
-    padding-left: 5rem;
-    padding-right: 5rem;
     gap: 2rem;
   }
 

@@ -131,7 +131,7 @@ You can deploy this project using:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]([Click here](https://mershark.github.io/index.html))
+- [Live Demo]([Click here](https://young-gaius.github.io/First-Capstone-Project/))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

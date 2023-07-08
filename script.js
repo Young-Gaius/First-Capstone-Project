@@ -1,17 +1,13 @@
-const menubutton = document.querySelector(".list");
-const icon = document.querySelector(".hide");
-const cancel = document.querySelector(".cancel-btn")
+const icon = document.querySelector("#harmburger");
+const list = document.querySelector(".nav-bottom");
+const cancel = document.querySelector("#cancel-btn");
 
 icon.addEventListener("click", () => {
-menubutton.style.display="flex" 
-cancel.style.display="block"
-icon.style.display="none"
+list.style.display="block"
 })
 
 cancel.addEventListener("click", () => {
-    menubutton.style.display="none" 
-    cancel.style.display="none"
-    icon.style.display="block"
+    list.style.display="none" 
 })
 
 

@@ -1,3 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: 'lato', sans-serif;
+}
+
+nav {
+  width: 100%;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: column;
+
+  width: 100% !important;
+  padding-block: 0.5rem;
+
+}
+
+.nav-logo {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.my-logo {
+  display: none;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.btn-holder button {
+  background: transparent;
+  font-size: 1.8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-icons i {
+  width: 31px;
+
+}
+
+.bx-x {
+  display: none !important;
+}
+
+.nav-bottom {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: orangered;
+  top: 0;
+}
+
+.nav-bottom ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.close {
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  color: #fff;
+}
+
+.nav-bottom ul li {
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+.nav-bottom ul li a {
+  font-size: 14px;
+  padding: 0.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  list-style: none;
+  color: #2e2e2e;
+}
+
+.campaign-item {
+  border: 3px solid var(--text-color);
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .bottom-nav {
+    width: 100% !important;
+    flex-direction: row;
+    justify-content: space-around !important;
+  }
+
+  .nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 4rem;
+    position: inherit;
+    background-color: #fff;
+  }
+
+  #button {
+    color: orangered;
+  }
+
+  .bottom-nav {
+    display: none;
+  }
+
+  .btn-holder button {
+    display: none;
+  }
+
+  .nav-bottom ul {
+
+    flex-direction: row
+  }
+
+  .nav-log,
+  .my-logo {
+    display: block;
+  }
+
+  .my-logo img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .campaign-item {
+    border: 3px solid orangered;
+    padding: 5px 10px;
+  }
+}
+
 header {
   background-image: url(images/Background-photo.jpg);
   background-size: cover;
@@ -183,6 +328,7 @@ header {
   flex-direction: column;
   margin-left: 13px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .picture {
@@ -211,6 +357,36 @@ header {
 .de-phote {
   text-align: center;
   margin-bottom: 25px;
+  background-image: url("./images/pizza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  isolation: isolate;
+}
+
+.de-phote::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #5f0b0b;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.de-phote-content {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 7rem;
+  gap: 0;
+}
+
+.de-phote-content h4 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.de-phote-content p {
+  color: #fff;
 }
 
 .sponsors {
@@ -289,6 +465,11 @@ header {
   right: 90px;
   top: 0;
   color: beige;
+}
+
+.first-section-paragraph {
+  text-align: center;
+  padding: 10px;
 }
 
 .pgraph {
@@ -380,7 +561,7 @@ header {
     justify-content: center;
     padding: 5px;
     margin: 5px;
-    border: 2px solid  orangered;
+    border: 2px solid orangered;
   }
 
   .images {
@@ -475,15 +656,10 @@ header {
     gap: 2rem;
   }
 
-  /* .last-section {
-    display: none;
-  } */
-
-  .la-calour {
-    /* width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-   position: absolute;
-   top: 0 ; */
+  .partner {
+    padding: 20px;
+    font-size: 30px;
+    color: white;
   }
 
   .footer {
@@ -492,14 +668,12 @@ header {
     background-color: grey;
     gap: 4rem;
     font-size: 25px;
-
-    /* gap: 20rem; */
   }
 
   .tof {
     width: 15%;
     margin-left: 80px;
-    padding: 25px;
+    padding: 20px;
   }
 
   .paragraph {
@@ -527,6 +701,7 @@ header {
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
+    justify-content: space-around;
   }
 
   .l-s {

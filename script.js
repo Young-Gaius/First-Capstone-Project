@@ -30,7 +30,7 @@ const menu = [
       alt:'spaghetti',
       name:'SPAGHETTI',
       price:'very affordale meal, just 5000fcfa',
-      description:'Here is a very delicious plate of spaghetti with a piece of well seasoned chicken"
+      description:'Here is a very delicious plate of spaghetti with a piece of well seasoned chicken'
     },
     {
       image:'images/food-4.jpg',
